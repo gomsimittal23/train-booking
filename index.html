@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Seat Reservation</title>
+    <style>
+        .seat {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: green;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+        }
+
+        .booked {
+            background-color: red;
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Train Seat Reservation</h1>
+    <div id="seat-map"></div>
+    <div>
+        <label for="seats">Number of seats to book:</label>
+        <input type="number" id="seats" min="1" max="7">
+        <button onclick="bookSeats()">Book Seats</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
